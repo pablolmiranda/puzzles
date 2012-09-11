@@ -15,6 +15,7 @@ Print a sideways triangule as bellow with minimum screen print command.
 ## Strategy ##
 
 To solve this puzzle you need to think in terms of white spaces.
+
     #www
     ##ww
     ###w
