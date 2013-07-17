@@ -11,10 +11,10 @@ minimum = nil
 profit = 0
 
 stock_file.each do | line |
-    high, low, opening = line.strip.split(',')
-    minimum = opening.to_f if minimum.nil?
-    minimum = opening.to_f if opening.to_f < minimum
-    profit = opening.to_f - minimum if ( opening.to_f - minimum ) > profit
+    open, high, low = line.strip.split(',')
+    minimum = open.to_f if minimum.nil?
+    minimum = open.to_f if open.to_f < minimum
+    profit = open.to_f - minimum if ( open.to_f - minimum ) > profit
 end
 
 puts profit
